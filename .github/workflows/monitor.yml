@@ -1,0 +1,38 @@
+name: Fund Monitor
+
+on:
+  schedule:
+    - cron: '0 * * * *' # 代表每小時整點自動執行
+  workflow_dispatch: # 允許您在網頁上手動按「按鈕」執行
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 賦予程式能寫入 last_holdings.json 的權限
+      
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run monitor
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python monitor_fund.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add last_holdings.json
+          git commit -m "Update last holdings data" || exit 0
+          git push
