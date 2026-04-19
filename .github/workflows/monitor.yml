@@ -2,26 +2,29 @@ name: Fund Monitor
 
 on:
   schedule:
-    - cron: '0 * * * *' # 代表每小時整點自動執行
+    # 每天台灣時間 08:00, 13:00, 18:00, 22:00 執行 (換算為 UTC 時間)
+    - cron: '0 0,5,10,14 * * *'
   workflow_dispatch: # 允許您在網頁上手動按「按鈕」執行
 
 jobs:
   monitor:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # 賦予程式能寫入 last_holdings.json 的權限
+      contents: write # 賦予程式能寫入 JSON 的權限
       
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # 升級至 v4，消除過期警告
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5 # 升級至 v5，消除過期警告
         with:
-          python-version: '3.9'
+          python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
       - name: Run monitor
         env:
@@ -33,6 +36,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add last_holdings.json
-          git commit -m "Update last holdings data" || exit 0
+          # 改用 *.json，一次存檔三大基金的獨立紀錄檔
+          git add *.json
+          git diff-index --quiet HEAD || git commit -m "Update multiple fund holdings"
           git push
