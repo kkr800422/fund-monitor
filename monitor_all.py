@@ -56,9 +56,14 @@ def send_telegram(message):
         "disable_web_page_preview": True
     }
     try:
-        requests.post(url, json=payload, timeout=15)
+        # 修改這裡：接收 response 並印出結果
+        resp = requests.post(url, json=payload, timeout=15)
+        if resp.status_code == 200:
+            print("✅ Telegram 訊息發送成功！")
+        else:
+            print(f"❌ TG API 報錯: {resp.status_code} - {resp.text}")
     except Exception as e:
-        print(f"❌ Telegram 發送失敗: {e}")
+        print(f"❌ Telegram 通訊異常: {e}")
 
 def compare_and_notify(fund, current):
     """比對單一基金的新舊持股並產生報告"""
