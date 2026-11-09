@@ -2,152 +2,158 @@
   {
     "code": "2330",
     "name": "台積電",
-    "shares": 16580000.0,
-    "weight": "15.17%"
+    "shares": 17724000.0,
+    "weight": "15.58%"
   },
   {
     "code": "2454",
     "name": "聯發科",
     "shares": 5712000.0,
-    "weight": "8.30%"
+    "weight": "8.37%"
   },
   {
     "code": "2383",
     "name": "台光電",
     "shares": 4328000.0,
-    "weight": "7.09%"
+    "weight": "6.93%"
   },
   {
     "code": "3017",
     "name": "奇鋐",
     "shares": 6655000.0,
-    "weight": "6.59%"
+    "weight": "6.65%"
   },
   {
     "code": "3037",
     "name": "欣興",
     "shares": 19739000.0,
-    "weight": "6.15%"
+    "weight": "5.88%"
   },
   {
     "code": "3653",
     "name": "健策",
-    "shares": 2532000.0,
-    "weight": "5.67%"
-  },
-  {
-    "code": "3711",
-    "name": "日月光投控",
-    "shares": 16905000.0,
-    "weight": "3.82%"
+    "shares": 2552000.0,
+    "weight": "5.66%"
   },
   {
     "code": "2327",
     "name": "國巨*",
     "shares": 23519000.0,
-    "weight": "3.77%"
+    "weight": "3.80%"
+  },
+  {
+    "code": "3711",
+    "name": "日月光投控",
+    "shares": 16905000.0,
+    "weight": "3.73%"
   },
   {
     "code": "6223",
     "name": "旺矽",
     "shares": 2504000.0,
-    "weight": "3.70%"
+    "weight": "3.65%"
   },
   {
     "code": "2345",
     "name": "智邦",
     "shares": 6331000.0,
-    "weight": "3.47%"
+    "weight": "3.50%"
   },
   {
     "code": "2308",
     "name": "台達電",
     "shares": 7582000.0,
-    "weight": "3.43%"
+    "weight": "3.46%"
   },
   {
     "code": "8046",
     "name": "南電",
     "shares": 8987000.0,
-    "weight": "3.37%"
+    "weight": "3.30%"
   },
   {
     "code": "2303",
     "name": "聯電",
     "shares": 79618000.0,
-    "weight": "3.14%"
+    "weight": "3.03%"
   },
   {
     "code": "6274",
     "name": "台燿",
     "shares": 7342000.0,
-    "weight": "2.85%"
+    "weight": "2.78%"
   },
   {
     "code": "2368",
     "name": "金像電",
     "shares": 7708000.0,
-    "weight": "2.69%"
+    "weight": "2.71%"
   },
   {
     "code": "3443",
     "name": "創意",
     "shares": 950000.0,
-    "weight": "2.53%"
+    "weight": "2.51%"
   },
   {
     "code": "6669",
     "name": "緯穎",
     "shares": 3281561.0,
-    "weight": "2.19%"
+    "weight": "2.12%"
   },
   {
     "code": "3665",
     "name": "貿聯-KY",
     "shares": 2887848.0,
-    "weight": "1.64%"
+    "weight": "1.61%"
   },
   {
     "code": "5274",
     "name": "信驊",
     "shares": 238900.0,
-    "weight": "1.16%"
+    "weight": "1.10%"
   },
   {
     "code": "6805",
     "name": "富世達",
-    "shares": 1412000.0,
-    "weight": "1.02%"
+    "shares": 1448000.0,
+    "weight": "1.06%"
+  },
+  {
+    "code": "3231",
+    "name": "緯創",
+    "shares": 11967000.0,
+    "weight": "0.79%"
   },
   {
     "code": "2449",
     "name": "京元電子",
     "shares": 7756450.0,
-    "weight": "0.68%"
+    "weight": "0.64%"
   },
   {
     "code": "8996",
     "name": "高力",
     "shares": 981000.0,
-    "weight": "0.50%"
+    "weight": "0.49%"
   },
   {
     "code": "6510",
     "name": "精測",
     "shares": 470000.0,
-    "weight": "0.46%"
+    "weight": "0.47%"
   },
   {
-    "code": "3231",
-    "name": "緯創",
-    "shares": 6003000.0,
-    "weight": "0.41%"
+    "code": "2317",
+    "name": "鴻海",
+    "shares": 4637000.0,
+    "weight": "0.44%"
   },
   {
     "code": "3264",
     "name": "欣銓",
     "shares": 5027000.0,
-    "weight": "0.35%"
+    "weight": "0.36%"
   },
   {
     "code": "1802",
@@ -165,7 +171,7 @@
     "code": "2891",
     "name": "中信金",
     "shares": 5455000.0,
-    "weight": "0.17%"
+    "weight": "0.16%"
   },
   {
     "code": "4979",
@@ -180,22 +186,28 @@
     "weight": "0.12%"
   },
   {
-    "code": "6515",
-    "name": "穎崴",
-    "shares": 69000.0,
-    "weight": "0.10%"
-  },
-  {
     "code": "8358",
     "name": "金居",
     "shares": 654000.0,
-    "weight": "0.08%"
+    "weight": "0.09%"
+  },
+  {
+    "code": "6515",
+    "name": "穎崴",
+    "shares": 69000.0,
+    "weight": "0.09%"
+  },
+  {
+    "code": "6278",
+    "name": "台表科",
+    "shares": 829000.0,
+    "weight": "0.06%"
   },
   {
     "code": "6187",
     "name": "萬潤",
     "shares": 121000.0,
-    "weight": "0.04%"
+    "weight": "0.05%"
   },
   {
     "code": "2002",
@@ -214,12 +226,6 @@
     "name": "新日興",
     "shares": 511000.0,
     "weight": "0.02%"
-  },
-  {
-    "code": "6278",
-    "name": "台表科",
-    "shares": 1000.0,
-    "weight": "0.00%"
   },
   {
     "code": "3661",
@@ -278,12 +284,6 @@
   {
     "code": "8150",
     "name": "南茂",
-    "shares": 1000.0,
-    "weight": "0.00%"
-  },
-  {
-    "code": "2317",
-    "name": "鴻海",
     "shares": 1000.0,
     "weight": "0.00%"
   },
